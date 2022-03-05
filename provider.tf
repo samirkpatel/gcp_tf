@@ -2,7 +2,7 @@
 provider "google" {
   credentials = file("serviceAccount.json")
 
-  project = "var.project_id"
+  project = "logical-app-332517"
   region  = "var.region"
   zone    = "var.zone"
 }
