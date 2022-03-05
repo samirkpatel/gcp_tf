@@ -11,9 +11,9 @@ provider "google" {
 data "terraform_remote_state" "remote_backend" {
   backend = "gcs"
   config = {
-    bucket  = var.remote_backend
-    prefix  = var.backend_env_prefix
-    
+    bucket = var.remote_backend
+    prefix = var.backend_env_prefix
+
     credentials = file("serviceAccount.json")
   }
 }

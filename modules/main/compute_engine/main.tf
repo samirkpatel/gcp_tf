@@ -1,7 +1,7 @@
 resource "google_compute_instance" "bastian_vm" {
     name = var.bastian_name
-    machine_type = "e2-medium"
-    zone = var.zone
+    machine_type = var.machine_type
+    zone = var.zone_name
 
     tags =  ["name", "bastian-1"]
 
