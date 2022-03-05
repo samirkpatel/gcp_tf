@@ -1,6 +1,6 @@
-variable "network_name" {
+variable "vpc_name" {
     type = "string"
-    default = ""
+    default = "prod"
 }
 
 variable "auto_create_subnetworks" {
@@ -13,9 +13,9 @@ variable "routing_mode" {
     default = "GLOBAL"
 }
 
-variable "project_id" {
-    type = "string"
-}
+#variable "project_id" {
+#    type = "string"
+#}
 
 variable "delete_default_routes_on_create" {
     type = bool
