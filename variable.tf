@@ -30,3 +30,8 @@ variable "backend_env_prefix" {
   
 }
 
+variable "bucket_name" {
+  default = "test"
+  
+}
+
