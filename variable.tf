@@ -72,3 +72,8 @@ variable "mtu" {
   default = 0
 
 }
+
+variable "network_name" {
+  type = "string"
+  default = ""
+}
