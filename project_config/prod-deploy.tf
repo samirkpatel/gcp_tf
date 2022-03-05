@@ -1,5 +1,5 @@
-module "bastian" {
-  source       = "./modules/main/compute_engine"
+module "bastian_host" {
+  source       = "../modules/main/bastian_host"
   zone_name    = "asia-south1-a"
   image_name   = "debian-cloud/debian-9"
   bastian_name = "bastian-1"
