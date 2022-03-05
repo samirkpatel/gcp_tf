@@ -1,5 +1,5 @@
 variable "project_id" {
-  default = "logical-app-332517"
+  #default = "logical-app-332517"
   type = "string"
 }
 
