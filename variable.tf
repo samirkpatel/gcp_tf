@@ -14,8 +14,8 @@ variable "zone" {
 }
 
 variable "bastian_name" {
-    default = "bastian-1"
-    type = "string"
+  default = "bastian-1"
+  type    = "string"
 }
 
 #tfstate backed variables.
@@ -32,12 +32,12 @@ variable "backend_env_prefix" {
 
 variable "image_name" {
   type = "string"
-  
+
 }
 
 variable "machine_type" {
-    type = "string"
-  
+  type = "string"
+
 }
 
 variable "zone_name" {
