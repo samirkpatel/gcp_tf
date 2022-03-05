@@ -30,8 +30,8 @@ variable "backend_env_prefix" {
   
 }
 
-variable "bucket_name" {
-  default = "test"
+variable "image_name" {
+  #default = "debian-cloud/debian-10"
+  default = ""
   
 }
-

@@ -7,7 +7,7 @@ resource "google_compute_instance" "bastian_vm" {
 
     boot_disk {
       initialize_params {
-        image = "debian-cloud/debian-10"
+        image = var.image_name
       }
     }
 
