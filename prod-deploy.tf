@@ -8,8 +8,7 @@ module "bastian_host" {
 
 module "vpc" {
   source = "./modules/main/vpc"
-  auto_create_subnetworks                = var.auto_create_subnetworks
-  routing_mode                           = var.routing_mode
-  delete_default_routes_on_create        = var.delete_default_routes_on_create
-  mtu                                    = var.mtu
-}
+  auto_create_subnetworks                = false
+  routing_mode                           = "GLOBAL"
+  delete_default_routes_on_create        = true
+ }
