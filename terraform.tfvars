@@ -8,3 +8,7 @@ zone_name    = "asia-south1-b"
 network_name                    = "prod-vpc"
 auto_create_subnetworks         = false
 delete_default_routes_on_create = false
+
+#Subnet
+subnet_name = "management-zone"
+subnet_cidr = "10.10.0.0/24"

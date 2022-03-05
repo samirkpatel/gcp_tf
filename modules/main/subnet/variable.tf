@@ -4,5 +4,14 @@ variable "subnet_name" {
 
 variable "subnet_cidr" {
     type = "string"
+}
+
+variable "vpc_name" {
+  type = "string"
+}
+
+variable "region" {
   
 }
+
+
