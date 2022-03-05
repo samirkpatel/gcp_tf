@@ -2,13 +2,19 @@
 provider "google" {
   credentials = file("serviceAccount.json")
 
-  project = "logical-app-332517"
-  region  = "var.region"
-  zone    = "var.zone"
+  project = var.project_id
+  region  = var.region
+  zone    = var.zone
 }
 
 #Terraform tfstate backend config.
-terraform {
-
+data "terraform_remote_state" "remote_backend" {
+  backend = "gcs"
+  config = {
+    bucket  = var.remote_backend
+    prefix  = var.backend_env_prefix
+    
+    credentials = file("serviceAccount.json")
+  }
 }
 
