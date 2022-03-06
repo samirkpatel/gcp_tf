@@ -31,3 +31,4 @@ override.tf.json
 *logical-*
 *serviceAccount.json*
 *tfvars*
+*.tfvars
