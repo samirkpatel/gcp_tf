@@ -32,3 +32,4 @@ override.tf.json
 *serviceAccount.json*
 *tfvars*
 *.tfvars
+*prod-deploy*
