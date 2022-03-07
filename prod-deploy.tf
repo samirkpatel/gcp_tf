@@ -21,3 +21,12 @@ module "subnet" {
   vpc_name    = "prod-vpc"
   region      = "asia-south1"
 }
+
+module "gcs" {
+  source = "./modules/main/gcs"
+  gcs_bucket_name = "my-test-bucket-1142348923673"
+  object_retenion_age = 30
+  object_retenion_action = "Delete"
+  bucket_region = "asia-south1"
+  
+}
