@@ -1,5 +1,5 @@
 variable "gcs_bucket_name" {
-    type = "string"  
+    type = "string"
 }
 
 variable "bucket_region" {
